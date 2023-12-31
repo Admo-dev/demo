@@ -1,0 +1,129 @@
+
+.image {
+    width: 100%;
+}
+
+.grid-video-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-title {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+@media (min-width: 1000px) {
+   .video-title {
+      font-size: 16px;
+      line-height: 24px;
+   }
+}
+
+@media (min-width: 1000px) {
+   .video-author, 
+   .video-stats {
+      font-size: 14px;
+   }
+}
+
+.video-author, .video-stats {
+    font-size: 13px;
+    color: rgb(92, 92, 92);
+} 
+
+.video-author {
+    margin-bottom: 5px;
+}
+.video-image {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+ .profile-image {
+    border-radius: 50px;
+    width: 35px;
+ }
+
+ .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+    margin-top: 80px;
+    margin-left: 80px;
+ }
+
+ @media (max-width: 900px) {
+   .grid {
+      grid-template-columns: 1fr 1fr;
+   }
+ }
+
+
+ .video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    padding: 3px;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 12px;
+ }
+ 
+
+ .profile-pic {
+    position: relative;
+ }
+
+ .profile-pic .channel-picture-tooltip {
+    position: absolute;
+    bottom: -70px;
+    background-color: white;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+ }
+
+
+.profile-pic:hover .channel-picture-tooltip {
+    opacity: 1;
+}
+ .channel-picture-tooltip .tooltip-channel-picture {
+    width: 35px;
+    border-radius: 20px;
+    margin-right: 10px;
+ }
+
+ .tooltip-info .name, 
+ .tooltip-info .subs {
+    font-family: Arial;
+    font-size: 12px;
+ }
+
+ .tooltip-info .name {
+    font-weight: bold;
+ }
+
+ .tooltip-info .subs {
+    color: grey;
+ }
+
+ .video-title-link {
+   text-decoration: none;
+   color: black;
+ }
